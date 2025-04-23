@@ -1,0 +1,120 @@
+.home {
+  width: 800px;
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+#title {
+  margin: 0;
+}
+
+#para {
+  margin-top: 10px;
+}
+
+.video {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: transparent;
+  padding: 12px 24px;
+}
+
+/* Watch Video Link Style */
+.video a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+  transform: scale(1.05);
+}
+
+/* Button Style (optional) */
+.video button {
+  padding: 10px 18px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video button:hover {
+  transform: scale(1.05);
+}
+.about {
+  width: 92%;
+  height: 800px;
+  background-color: transparent;
+  display: flex;
+  padding-top: 80px; /* Adjusted top padding */
+  padding-bottom: 80px; /* Adjusted bottom padding */
+  align-items: center;
+  padding-left: 60px; /* Reduced left padding for better responsiveness */
+  padding-right: 30px; /* Reduced right padding for better responsiveness */
+}
+
+.c1 {
+  width: 50%;
+  height: 100%;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.c1 h3 {
+  color: #273d4e;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none solid rgb(39, 61, 78);
+}
+.c2 {
+  width: 50%;
+  height: 100%;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.custom-list li i {
+  color: #f04818;
+  margin-top: 4px;
+}
