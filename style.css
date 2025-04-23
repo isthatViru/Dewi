@@ -5,7 +5,8 @@
   position: relative;
   height: 100vh;
 
-  background-image: url("/Assignment/media/hero-bg.jpg");
+  background-image: url("media/hero-bg.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
