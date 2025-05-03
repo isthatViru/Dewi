@@ -61,6 +61,10 @@ a:hover {
 .video button:hover {
   transform: scale(1.05);
 }
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
 .about {
   width: 92%;
   height: 800px;
@@ -117,4 +121,57 @@ a:hover {
 .custom-list li i {
   color: #f04818;
   margin-top: 4px;
+}
+.cards-section {
+  width: 100%;
+  height: 40vh;
+  background-color: #f1f4fa;
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 200px;
+  height: 40%;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  padding-left: 30px;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  border-radius: 10px; /* rounded corners */
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.numbers {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 36px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 600;
+}
+.card-service {
+  color: #273d4e;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
 }

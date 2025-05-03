@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="home&about.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="service.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,6 +16,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- GLightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox@3.0.6/dist/css/glightbox.min.css" rel="stylesheet">
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.6/dist/js/glightbox.min.js"></script>
+
+
   </head>
   <body>
     <div class="main">
@@ -22,33 +38,31 @@
         <h1 id="sitename">Dewi</h1>
         <div class="navigation">
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>PORTFOLIO</li>
-            <li>TEAM</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#team">TEAM</a></li>
             <li>
-              <div class="dropdown">
-                <button>Main Menu</button>
-                <div class="dropdown-content">
-                  <a href="#">Item 1</a>
-
-                  <div class="submenu">
-                    <a href="#">Item 2 ▸</a>
-                    <div class="submenu-content">
-                      <a href="#">Sub Item 1</a>
-                      <a href="#">Sub Item 2</a>
-                      <a href="#">Sub Item 3</a>
-                    </div>
-                  </div>
-
-                  <a href="#">Item 3</a>
-                  <a href="#">Item 4</a>
-                  <a href="#">Item 5</a>
-                </div>
-              </div>
+              <li class="dropdown"><a href="#"><span style="color: white; font-size: medium; margin-top: -20px;">Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li>
             </li>
-            <li>CONTACT</li>
+            <li><a href="#contact-container">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -71,68 +85,703 @@
         </div>
       </div>
     </div>
-    <div class="about">
-      <div class="c1">
-        <h3>
-          Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo
-        </h3>
-        <img
-          src="./media/about.jpg"
-          alt="about"
-          style="width: 640px; height: 500px; border-radius: 10px"
-        />
-        <p>
-          Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod
-          nisi et. Placeat debitis quia recusandae odit et consequatur
-          voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.
-          Temporibus nihil enim deserunt sed ea. <br />
-          <br />
-          Provident sit expedita aut cupiditate nihil vitae quo officia vel.
-          Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam
-          qui. Ut ut repellendus nobis tempore doloribus debitis explicabo
-          similique sit. Accusantium sed ut omnis beatae neque deleniti
-          repellendus.
-        </p>
+    <div class="about-section">
+      <div class="about">
+        <div class="c1">
+          <h3>
+            Voluptatem dignissimos provident laboris nisi ut aliquip ex ea
+            commodo
+          </h3>
+          <img
+            src="./media/about.jpg"
+            alt="about"
+            style="width: 640px; height: 500px; border-radius: 10px"
+          />
+          <p>
+            Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis
+            quod nisi et. Placeat debitis quia recusandae odit et consequatur
+            voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.
+            Temporibus nihil enim deserunt sed ea. <br />
+            <br />
+            Provident sit expedita aut cupiditate nihil vitae quo officia vel.
+            Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem
+            veniam qui. Ut ut repellendus nobis tempore doloribus debitis
+            explicabo similique sit. Accusantium sed ut omnis beatae neque
+            deleniti repellendus.
+          </p>
+        </div>
+        <div class="c2">
+          <p style="font-size: medium; color: rgb(39, 61, 78)">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul class="custom-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <span
+                >Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <span
+                >Duis aute irure dolor in reprehenderit in voluptate
+                velit.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <span>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate trideta
+                storacalaperda mastiro dolore eu fugiat nulla pariatur.
+              </span>
+            </li>
+          </ul>
+          <img
+            src="./media/about-2.jpg"
+            alt="about"
+            style="width: 640px; height: 515px; border-radius: 10px"
+          />
+        </div>
       </div>
-      <div class="c2">
-        <p style="font-size: medium; color: rgb(39, 61, 78)">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <ul class="custom-list">
-          <li>
-            <i class="fa-solid fa-circle-check"></i>
-            <span
-              >Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span
-            >
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-check"></i>
-            <span
-              >Duis aute irure dolor in reprehenderit in voluptate velit.</span
-            >
-          </li>
-          <li>
-            <i class="fa-solid fa-circle-check"></i>
-            <span>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate trideta storacalaperda
-              mastiro dolore eu fugiat nulla pariatur.
-            </span>
-          </li>
-        </ul>
-        <img
-          src="./media/about-2.jpg"
-          alt="about"
-          style="width: 640px; height: 515px; border-radius: 10px"
-        />
+      <div class="cards-section">
+        <div class="card1">
+          <i class="fa-regular fa-face-smile fa-3x" style="color: #ff0000"></i>
+          <div class="card-info">
+            <span class="numbers">232</span>
+            <span class="card-service">Happy Clients</span>
+          </div>
+        </div>
+        <div class="card2">
+          <i class="bi bi-journals" style="color: #ff0000; font-size: 50px"></i>
+          <div class="card-info">
+            <span class="numbers">521</span>
+            <span class="card-service">Projects</span>
+          </div>
+        </div>
+        <div class="card3">
+          <i class="bi bi-headset" style="color: #ff0000; font-size: 50px"></i>
+          <div class="card-info">
+            <span class="numbers">1463</span>
+            <span class="card-service">Hours Of Support</span>
+          </div>
+        </div>
+        <div class="card4">
+          <i class="bi bi-people" style="color: #ff0000; font-size: 50px"></i>
+          <div class="card-info">
+            <span class="numbers">15</span>
+            <span class="card-service">Hard Workers</span>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="service">
+      <div class="service-c1">
+        <span class="service-title">SERVICES</span>
+        <span class="service-heading">Featured Services</span>
+
+        <section class="section">
+          <!-- Card 1 -->
+          <div class="card-container" id="card1">
+            <div
+              class="card-image"
+              style="background-image: url(./media/services-1.jpg)"
+            ></div>
+            <div class="card-content">
+              <div class="icon-badge"><i class="bi bi-activity"></i></div>
+              <h3>Nesciunt Mete</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-container" id="card2">
+            <div
+              class="card-image"
+              style="background-image: url('./media/services-2.jpg')"
+            ></div>
+            <div class="card-content">
+              <div class="icon-badge"><i class="bi bi-broadcast"></i></div>
+              <h3>Eosle Commodi</h3>
+              <p>Ut autem aut autem non a. Libero corrupti neque eum hic.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-container" id="card3">
+            <div
+              class="card-image"
+              style="background-image: url('./media/services-3.jpg')"
+            ></div>
+            <div class="card-content">
+              <div class="icon-badge"><i class="bi bi-easel"></i></div>
+              <h3>Ledo Markt</h3>
+              <p>
+                Ut excepturi voluptatem nisi sed. Vel qui voluptates corrupti.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="service-clients">
+          <div class="client"><img src="./media/client-1.png" alt="" /></div>
+          <div class="client"><img src="./media/client-2.png" alt="" /></div>
+          <div class="client"><img src="./media/client-3.png" alt="" /></div>
+          <div class="client"><img src="./media/client-4.png" alt="" /></div>
+          <div class="client"><img src="./media/client-5.png" alt="" /></div>
+          <div class="client"><img src="./media/client-6.png" alt="" /></div>
+        </div>
+        <div class="tabs">
+          <button onclick="showContent('tab1', this)">
+            <i class="bi bi-binoculars"></i>
+            <h4>Modi sit est dela pireda nest</h4>
+          </button>
+          <button onclick="showContent('tab2', this)">
+            <i class="bi bi-box-seam"></i>
+            <h4>Unde praesenti mara setra le</h4>
+          </button>
+          <button onclick="showContent('tab3', this)">
+            <i class="bi bi-brightness-high"></i>
+            <h4>Pariatur explica nitro dela</h4>
+          </button>
+          <button onclick="showContent('tab4', this)">
+            <i class="bi bi-command"></i>
+            <h4>Nostrum qui dile node</h4>
+          </button>
+        </div>
+
+        <div id="content">
+          <div id="tab1" class="tab-content active">
+            <img
+              src="./media/working-1.jpg"
+              alt="How to Work Efficiently at Home"
+            />
+            <div class="tab-text">
+              <h2>
+                Voluptatem dignissimos provident quasi corporis voluptates sit
+                assumenda.
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tab2" class="tab-content">
+            <img
+              src="./media/working-2.jpg"
+              alt="How to Work Efficiently at Home"
+            />
+            <div class="tab-text">
+              <h2>
+                Neque exercitationem debitis soluta quos debitis quo mollitia
+                officia est
+              </h2>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+              <ul>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tab3" class="tab-content">
+            <img
+              src="./media/working-3.jpg"
+              alt="How to Work Efficiently at Home"
+            />
+            <div class="tab-text">
+              <h2>
+                Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor
+                ut assumenda
+              </h2>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+              <ul>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum
+                </li>
+              </ul>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div id="tab4" class="tab-content">
+            <img
+              src="./media/working-4.jpg"
+              alt="How to Work Efficiently at Home"
+            />
+            <div class="tab-text">
+              <h2>
+                Omnis fugiat ea explicabo sunt dolorum asperiores sequi
+                inventore rerum
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-c2">
+        <span class="service-title">SERVICES</span>
+        <span class="service-heading">Featured Services</span>
+        <div class="service-grid">
+          <div class="row1">
+            <div class="grid-card">
+              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="grid-card">
+              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+            </div>
+            <div class="grid-card"> <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div></div>
+          </div>
+          <div class="row2">
+            <div class="grid-card">
+              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+            </div>
+            <div class="grid-card">
+              <i class="bi bi-binoculars icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+            <div class="grid-card">
+              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
+                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="carousal">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+          <div class="carousel-inner">
+      
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-content">
+                  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile" />
+                  <h5>John Larson</h5>
+                  <p class="text-muted">Entrepreneur</p>
+                  <div class="mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="quote">
+                    <i class="bi bi-quote quote-icon-start"></i>
+                    Amazing service and smooth experience! Will definitely recommend to others.
+                    <i class="bi bi-quote quote-icon-end"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-content">
+                  <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Profile" />
+                  <h5>Lisa Bennett</h5>
+                  <p class="text-muted">Marketing Expert</p>
+                  <div class="mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="quote">
+                    <i class="bi bi-quote quote-icon-start"></i>
+                    The team really knows how to deliver results. I'm impressed!
+                    <i class="bi bi-quote quote-icon-end"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-content">
+                  <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Profile" />
+                  <h5>Michael Chen</h5>
+                  <p class="text-muted">Product Designer</p>
+                  <div class="mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="quote">
+                    <i class="bi bi-quote quote-icon-start"></i>
+                    This is my go-to tool every time. So easy to use and effective.
+                    <i class="bi bi-quote quote-icon-end"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-content">
+                  <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Profile" />
+                  <h5>Priya Mehta</h5>
+                  <p class="text-muted">Software Engineer</p>
+                  <div class="mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="quote">
+                    <i class="bi bi-quote quote-icon-start"></i>
+                    Smooth experience and very professional. They exceeded expectations!
+                    <i class="bi bi-quote quote-icon-end"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-content">
+                  <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Profile" />
+                  <h5>David Roy</h5>
+                  <p class="text-muted">UX Strategist</p>
+                  <div class="mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="quote">
+                    <i class="bi bi-quote quote-icon-start"></i>
+                    Truly remarkable service. I couldn’t ask for better support.
+                    <i class="bi bi-quote quote-icon-end"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></button>
+          </div>
+        </div>
+      </div><section id="portfolio" class="portfolio section">
+
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>CHECK OUR PORTFOLIO</p>
+        </div><div class="container">
+  
+          <div class="isotope-layout" data-default-filter=".filter-app" data-layout="masonry" data-sort="original-order">
+
+  
+            <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-books">Books</li>
+            </ul><div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1343.85px;">
+  
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 439.988px; top: 0px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Product 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 879.976px; top: 0px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/branding-1.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Branding 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/branding-1.jpeg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 0px; top: 335.962px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/books-1.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Books 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/books-1.jpeg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 439.988px; top: 335.962px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/app-2.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/app-2.jpeg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 879.976px; top: 335.962px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/product-2.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Product 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/product-2.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 671.924px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/branding-2.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Branding 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/branding-2.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 439.988px; top: 671.924px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/books-2.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Books 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/books-2.jpeg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 879.976px; top: 671.924px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/app-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/app-3.jpeg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 0px; top: 1007.89px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/product-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Product 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/product-3.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 439.988px; top: 1007.89px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/branding-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Branding 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/branding-3.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 879.976px; top: 1007.89px;">
+                <div class="portfolio-content h-100">
+                  <img src="media/books-3.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Books 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="media/books-3.jpeg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+  
+        </div>
+  
+      </section>
+      </div>
+      <section id="team" class="team section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>CHECK OUR TEAM</p>
+        </div><!-- End Section Title -->
+        
+        <div class="container">
+  
+          <div class="row gy-5">
+  
+            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="pic"><img src="./media/team-1.jpeg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="pic"><img src="./media/team-2.jpeg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <div class="pic"><img src="./media/team-3.jpeg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+          </div>
+  
+        </div>
+  
+      </section>
     </div>
     <div class="contact">
       <h2 class="heading">Contact</h2>
       <h1 class="heading2">Necessitatibus eius consequatur</h1>
 
-      <div class="contact-container">
+    <div id="contact-container" class="contact">
         <!-- Contact Info -->
         <div class="contact-info">
           <div class="card">
@@ -176,5 +825,83 @@
         </div>
       </div>
     </div>
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- Footer About Section -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Dewi</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+    
+          <!-- Useful Links Section -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Our Services Section -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+    
+          <!-- Newsletter Section -->
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Copyright Section -->
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="filter.js"></script>
+
+    <script src="index.js"></script>
   </body>
 </html>
